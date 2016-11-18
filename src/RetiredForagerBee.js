@@ -2,9 +2,8 @@ import ForagerBee from './ForagerBee';
 
 class RetiredForagerBee extends ForagerBee {
   
-  constructor(age,job,canFly,color,food,eat,treasureChest){
-  	
-  	super(food,eat,treasureChest);
+  constructor(){
+  	super();
   	
   	this.age = 40;
   	this.job = 'gamble';
@@ -17,7 +16,7 @@ class RetiredForagerBee extends ForagerBee {
   };
 
   gamble(){
-  	this.treasureChest += 1;
+  	this.treasureChest.push(1);
   };
 
 }

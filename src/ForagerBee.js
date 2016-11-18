@@ -1,10 +1,9 @@
 import Bee from './Bee'
 
-class ForagerBee extends HoneyMakerBee {
+class ForagerBee extends Bee {
   
-  constructor(age, color, food, eat, job, canFly, treasureChest){
-  
-	  super(color,food,eat);
+  constructor(){
+	  super();
 	  
 	  this.age = 10;
 	  this.job = 'find pollen';

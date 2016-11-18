@@ -1,18 +1,18 @@
 import Bee from './Bee'
 
 class HoneyMakerBee extends Bee {
-	constructor(age,job,color,food,eat,honeyPot){
-		super(color,food,eat)
+	constructor(){
+		super();
 		this.age = 10;
 		this.job = 'make honey';
 		this.honeyPot = 0;
 	}
 	
 	makeHoney(){
-		this.honeyPot += 1;
+		this.honeyPot++;
 	}
 	giveHoney(){
-		this.honeyPot -= 1;
+		this.honeyPot--;
 	}
 };
 
